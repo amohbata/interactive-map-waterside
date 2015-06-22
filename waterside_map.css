@@ -1,0 +1,82 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
+
+.waterside_map {
+  background-image: url(img/waterside_site_plan.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 760px;
+  width: 1034px;
+}
+
+.infobox_container {
+  position: relative;
+}
+
+.infobox {
+  width: 150px;
+  height: 175px;
+  padding: 10px;
+  background-color: white;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.infobox span:before{
+  content:'';
+  display:block;
+  width:0;
+  height:0;
+  position:absolute;
+
+  border-left: 18px solid transparent;
+  border-bottom: 18px solid white;
+  border-right: 18px solid transparent;
+  left: 66px;
+  top: -18px;
+}
+
+.infobox_title, .infobox_lot_title {
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.infobox_close {
+  cursor: pointer;
+  margin: 5px;
+  font-family: Helvetica, Arial, sans-serif;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  font-size: 0.5em;
+  line-height: 0.7em;
+  background-color: #c0c0c0;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  text-decoration: none;
+  display: block;
+  border-radius: 25px;
+}
+
+.infobox_close:hover {
+  opacity: .7;
+}
+
+.lot_image {
+  height: 105px;
+  width: 125px;
+  background-image: url(img/sample_lot.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 12%
+}
+
+.lot_subtext {
+  font-size: 0.35em;
+  font-family: 'Open Sans', sans-serif;
+  color: #691b36;
+  text-align: right;
+}
